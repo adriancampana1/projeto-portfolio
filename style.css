@@ -23,7 +23,7 @@ body {
 }
 
 #page {
-  width: 33rem;
+  max-width: 35rem;
 }
 
 h1,
@@ -41,7 +41,7 @@ p {
 /* first page home section */
 
 main {
-  padding: 6.7rem;
+  padding: 3rem;
 }
 
 #title-main {
@@ -92,6 +92,7 @@ main p {
   border: 1px solid rgba(27, 27, 30, 0.5);
   box-shadow: 2px 4px 4px rgba(12, 170, 220, 0.2);
   border-radius: 8px;
+  transition: 0.6s;
 }
 
 #btn2-main {
@@ -106,6 +107,22 @@ main p {
   border: 1px solid rgba(27, 27, 30, 0.5);
   box-shadow: 2px 4px 4px rgba(216, 219, 226, 0.2);
   border-radius: 8px;
+
+  transition: 0.6s;
+}
+
+#btn1-main:hover {
+  background: #30636b;
+  transition: 0.6s;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+#btn2-main:hover {
+  background: #899aac;
+  transition: 0.6s;
+  cursor: pointer;
+  letter-spacing: 1px;
 }
 
 #btn1-main img {
@@ -304,7 +321,7 @@ a:hover {
 
   #menu li {
     font-family: var(--ff-secondary);
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     font-weight: 400;
   }
 
