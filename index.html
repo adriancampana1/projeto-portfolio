@@ -13,7 +13,8 @@
 
     <script src=/jquery.js"> </script> <script src="js/script.js"></script>
 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@300;400&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@300;400&family=Special+Elite&display=swap"
         rel="stylesheet">
 </head>
 
@@ -50,12 +51,12 @@
 
         <main id="main">
             <section id="home-page">
-                <h1 id="title-main">Olá! Meu nome é <span>Adrian</span>, e este é o meu portfólio</h1>
+                <h1 class="title-main">Olá! Meu nome é Adrian, e este é o meu portfólio</h1>
                 <p id="p-main">Desenvolvedor Full Stack</p>
                 <div class="btns">
-                    <button id="btn1-main"><img src="./assets/icons8-github-50.png" alt="icone do GitHub"> Perfil no
+                    <button id="btn1-main"><img src="./assets/icons8-github-48.png" alt="icone do GitHub"> Perfil no
                         GitHub</button>
-                    <button id="btn2-main"><img src="./assets/icons8-linkedin-circundado-30.png"
+                    <button id="btn2-main"><img src="./assets/icons8-linkedin-circundado-64.png"
                             alt="icone do linkeding">
                         Perfil no
                         Linkedin</button>
@@ -117,6 +118,18 @@
     </div>
 
     <script src="script.js"></script>
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 95 * i)
+            });
+        }
+
+        const titulo = document.querySelector('h1')
+        typeWriter(titulo);
+    </script>
 </body>
 
 </html>
