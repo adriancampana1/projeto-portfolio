@@ -14,7 +14,7 @@
     <script src=/jquery.js"> </script> <script src="js/script.js"></script>
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@300;400&family=Special+Elite&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@700&family=Cutive+Mono&family=Inter:wght@700&family=Lekton:wght@700&family=Open+Sans:wght@300;400&display=swap"
         rel="stylesheet">
 </head>
 
@@ -72,46 +72,86 @@
                 </div>
 
                 <div class="project-box">
-                    <div class="col-2">
-                        <img src="./assets/icons8-folder-48.png" alt="icone de pasta de arquivos">
-                        <div class="icons">
-                            <img src="assets/icons8-github-48.png"
-                                alt="icone do github para acessar o repositorio do projeto">
-                            <img src="assets/icons8-link-externo-48.png"
-                                alt="icone de link externo para acessar a pagina do projeto">
+                    <div class="box-content">
+                        <div class="box-front">
+                            <div class="col-2">
+                                <img src="./assets/icons8-folder-48.png" alt="icone de pasta de arquivos">
+                                <div class="icons">
+                                    <img src="assets/icons8-github-48.png"
+                                        alt="icone do github para acessar o repositorio do projeto">
+                                    <img src="assets/icons8-link-externo-48.png"
+                                        alt="icone de link externo para acessar a pagina do projeto">
+                                </div>
+                            </div>
+
+                            <div class="title-subtitle">
+                                <h3>Projeto treine.me</h3>
+                                <p>Desenvolvimento de uma página do projeto treine.me</p>
+                            </div>
+
+                            <div class="project-techs">
+                                <p>CSS3</p>
+                                <p>HTML5</p>
+                            </div>
                         </div>
+
+                        <div class="box-back">
+                            <img class="img-hover" src="assets/treineme.png" alt="imagem do projeto treine.me">
+                            <div class="back-btns">
+                                <a href="#" class="git-btn">GitHub</a>
+                                <a href="#" class="prev-btn">Preview</a>
+                            </div>
+                        </div>
+
                     </div>
 
-                    <h3>Projeto treine.me</h3>
-                    <p>Desenvolvimento de uma página do projeto treine.me</p>
-
-                    <div class="project-techs">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                    </div>
                 </div>
                 <div class="project-box">
-                    <div class="col-2">
-                        <img src="./assets/icons8-folder-48.png" alt="icone de pasta de arquivos">
-                        <div class="icons">
-                            <img src="assets/icons8-github-48.png"
-                                alt="icone do github para acessar o repositorio do projeto">
-                            <img src="assets/icons8-link-externo-48.png"
-                                alt="icone de link externo para acessar a pagina do projeto">
+                    <div class="box-content">
+                        <div class="box-front">
+                            <div class="col-2">
+                                <img src="./assets/icons8-folder-48.png" alt="icone de pasta de arquivos">
+                                <div class="icons">
+                                    <img src="assets/icons8-github-48.png"
+                                        alt="icone do github para acessar o repositorio do projeto">
+                                    <img src="assets/icons8-link-externo-48.png"
+                                        alt="icone de link externo para acessar a pagina do projeto">
+                                </div>
+                            </div>
+
+                            <div class="title-subtitle">
+                                <h3>Projeto Rocket.sect</h3>
+                                <p>Desenvolvimento de uma página do projeto Rocket.sect</p>
+                            </div>
+                            <div class="project-techs">
+                                <p>CSS3</p>
+                                <p>HTML5</p>
+                            </div>
+
+                        </div>
+
+                        <div class="box-back">
+                            <img class="img-hover" src="assets/rocketsect.png" alt="imagem do projeto rocket.sect">
+                            <div class="back-btns">
+                                <a href="#" class="git-btn">GitHub</a>
+                                <a href="#" class="prev-btn">Preview</a>
+                            </div>
                         </div>
                     </div>
 
-                    <h3>Projeto Rocket.sect</h3>
-                    <p>Desenvolvimento de uma página do projeto Rocket.sect</p>
-
-                    <div class="project-techs">
-                        <p>CSS3</p>
-                        <p>HTML5</p>
-                    </div>
                 </div>
 
                 <button class="btn-neon">Ver mais</button>
             </section>
+
+            <!-- <section id="technologies">
+                <div class="section-title">
+                    <p>TECNOLOGIAS</p>
+                    <h2>Ferramentas que utilizo</h2>
+                </div>
+
+                
+            </section> -->
         </main>
 
         <footer></footer>
@@ -123,7 +163,7 @@
             const textoArray = elemento.innerHTML.split('');
             elemento.innerHTML = '';
             textoArray.forEach((letra, i) => {
-                setTimeout(() => elemento.innerHTML += letra, 95 * i)
+                setTimeout(() => elemento.innerHTML += letra, 110 * i)
             });
         }
 
