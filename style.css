@@ -101,7 +101,7 @@ main p {
   justify-content: center;
   gap: 8px;
 
-  padding: 6px 0;
+  padding: 10px 0;
 
   border: 1px solid #58a4b0;
   border-radius: 8px;
@@ -117,7 +117,7 @@ main p {
   justify-content: center;
   gap: 8px;
 
-  padding: 6px 24px;
+  padding: 10px 0;
 
   background: none;
   border: 1px solid #a9bcd0;
@@ -258,6 +258,8 @@ main p {
   border: 1px solid #58a4b0;
   border-radius: 5px;
 
+  filter: drop-shadow(2px 2px 20px rgba(88, 164, 176, 0.15));
+
   font-family: "Open Sans";
   font-weight: 600;
   font-size: 1.3rem;
@@ -269,6 +271,13 @@ main p {
 
   padding: 6px 22px;
   margin: 1.5rem 0 10rem;
+}
+
+.btn-neon:hover {
+  transition: 0.6s;
+  transform: scale(1.1);
+
+  letter-spacing: 2px;
 }
 
 .project-box {
@@ -362,7 +371,226 @@ main p {
 
 /* section technologies */
 
+#technologies {
+  margin: 5rem 0 10rem;
+}
 
+.tech-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 30px;
+}
+
+.box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  padding: 25px 5px;
+
+  background: linear-gradient(
+    180deg,
+    rgba(29, 29, 38, 0.21) 0%,
+    rgba(27, 27, 40, 0.35) 52.6%,
+    rgba(18, 18, 46, 0.21) 100%
+  );
+  box-shadow: 2px 2px 20px rgba(88, 164, 176, 0.1);
+  border-radius: 20px;
+}
+
+.box-wrapper p {
+  margin: 0;
+
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+
+  color: #a9bcd0;
+}
+
+/*  */
+
+/* section experience */
+
+#experience {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+
+  margin-bottom: 10rem;
+}
+
+#experience .section-title h2 {
+  text-align: left;
+}
+
+#experience .section-title p {
+  text-align: left;
+}
+
+.experience-wrapper {
+  display: flex;
+
+  margin-bottom: 3.5rem;
+}
+
+.experience-content {
+  margin: 1rem 0 0 1rem;
+}
+
+.experience-content h2 {
+  text-align: left;
+
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+
+  color: #ffffff;
+}
+
+.experience-content p {
+  text-align: left;
+  margin: 0;
+}
+
+.experience-content .sub-title {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+
+  color: #58a4b0;
+
+  margin-bottom: 1rem;
+}
+
+/*  */
+
+/* section form */
+
+#contact {
+  margin-bottom: 10rem;
+}
+
+.form-wrapper {
+  padding: 20px;
+
+  background: #1d1d21;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+
+fieldset {
+  border: none;
+}
+
+.social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 12px;
+}
+
+.social-media img {
+  width: 24px;
+}
+
+.fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+}
+
+.input-wrapper input {
+  background: #1b1b1e;
+  border: 1px solid rgba(88, 164, 176, 0.05);
+  border-radius: 5px;
+
+  height: 3.6rem;
+}
+
+.input-wrapper textarea {
+  background: #1b1b1e;
+  border: 1px solid rgba(88, 164, 176, 0.05);
+  border-radius: 5px;
+}
+
+.input-wrapper label {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 2rem;
+
+  color: #58a4b09a;
+}
+
+.btn-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background: #1b1b1e;
+  border: 1px solid #58a4b0;
+  border-radius: 5px;
+
+  filter: drop-shadow(2px 2px 20px rgba(88, 164, 176, 0.15));
+
+  font-family: "Open Sans";
+  font-weight: 600;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+
+  text-align: center;
+
+  color: #58a4b0;
+
+  padding: 6px 19px;
+  margin-top: 20px;
+}
+
+.button:hover {
+  transition: 0.6s;
+  transform: scale(1.1);
+
+  letter-spacing: 2px;
+}
+
+/*  */
+
+/* footer */
+
+footer {
+  margin-bottom: 2rem;
+}
+
+footer p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
+
+  color: #373f51;
+}
 
 /*  */
 
