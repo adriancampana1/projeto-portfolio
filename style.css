@@ -59,7 +59,7 @@ main {
   line-height: 4.4rem;
   letter-spacing: 0px;
 
-  height: 20rem;
+  height: 26rem;
   text-align: center;
   display: inline-block;
 }
@@ -77,7 +77,7 @@ main p {
   line-height: 20px;
   text-align: center;
 
-  margin: 10rem 0 1.5rem;
+  margin: 14rem 0 1.5rem;
 }
 
 #home-page button {
@@ -477,7 +477,7 @@ main p {
 }
 
 .form-wrapper {
-  padding: 20px;
+  padding: 2rem;
 
   background: #1d1d21;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
