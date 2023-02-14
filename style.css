@@ -42,14 +42,33 @@ p {
 
 #home-page {
   width: 100%;
-  height: calc(100vh - 7rem);
+  height: 100vh;
 
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
-main {
+#bg-mobile {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+
+  opacity: 0.08;
+}
+
+.hp-content {
+  padding: 0 3rem;
+}
+
+main section {
   padding: 0 3rem;
 }
 
@@ -62,6 +81,8 @@ main {
   height: 26rem;
   text-align: center;
   display: inline-block;
+
+  margin-top: 7rem;
 }
 
 h1::after {
@@ -94,7 +115,7 @@ main p {
   flex-direction: column;
   gap: 12px;
 
-  margin-top: 7rem;
+  margin-top: 6rem;
 }
 
 #btn1-main {
@@ -166,6 +187,8 @@ main p {
 /* projects */
 
 #projects {
+  margin-top: 5rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -619,13 +642,20 @@ a:hover {
 }
 
 #header {
+  margin-top: 1rem;
+
   box-sizing: border-box;
   height: 7rem;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #19191c;
+  background: #16161b;
+
+  position: fixed;
+  width: 100%;
+
+  z-index: 1000;
 }
 
 #menu {
